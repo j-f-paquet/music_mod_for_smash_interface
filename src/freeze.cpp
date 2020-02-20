@@ -578,11 +578,11 @@ void Freeze::ReadFreezeOutSurface(InitData *DATA) {
                     >> temp_cell.W[1][1] >> temp_cell.W[1][2]
                     >> temp_cell.W[1][3] >> temp_cell.W[2][2]
                     >> temp_cell.W[2][3] >> temp_cell.W[3][3];
-            if (DATA->turn_on_bulk) {
+            //if (DATA->turn_on_bulk) {
                 surfdat >> temp_cell.pi_b;
-            } else {
-                temp_cell.pi_b = 0.;
-            }
+            //} else {
+            //    temp_cell.pi_b = 0.;
+            //}
             if (DATA->turn_on_rhob) {
                 surfdat >> temp_cell.rho_B;
             } else {
